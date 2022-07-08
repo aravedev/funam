@@ -1,0 +1,160 @@
+loading="lazy"
+loading="lazy"
+loading="lazy"
+
+ <header class="sticky-top bg-light" id="inicio">
+    
+  </header>
+
+
+
+<!--carrousel-->
+    <section class="my-3">
+      <div class="container-lg-8">
+        <section class="main">
+          <section class="hero">
+            <div class="row justify-content-center">
+              <div class="col col-lg-10 height">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./img/senior1-min.jpg"
+                        class="d-block img-fluid"
+                        alt="abuela enseñando sus manos"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./img/senior2-min.jpg"
+                        class="d-block img-fluid"
+                        alt="mujer ensenando un celular a un abuelo"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./img/senior3-min.jpg"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </section>
+
+
+
+    <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+               <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Contáctenos</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">funam.fundacion@gmail.com</h6>
+                <p class="card-text">+57 302 854 2341</p>
+                <p class="card-text">Calle 9 # 13-45</p>
+                <p>Girardota, Antioquia, Colombia</p>
+                </div>
+              </div>
+            
+              <div class="col-md-4">
+                <img src="./img/logo.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+
+
+
+          //////////////
+
+          <div class="container ">
+        <h3 class="display-3 text-center mb-5">Nuestro Equipo</h3>
+        <div class="row border justify-content-center ">
+          <!--card1-->
+          <div class="col-10 col-md-5 col-lg-3 border justify-content-center align-items-center">
+            <div class="card pic" style="width: 18rem;">
+              <img  src="https://media.istockphoto.com/photos/smiling-hispanic-woman-health-worker-in-blue-uniform-in-medical-picture-id1297554621?b=1&k=20&m=1297554621&s=612x612&w=0&h=0juodRBLqtT72Fi1JrjzgOvIkwQQ5YYtA1_seCrim2A=" class="card-img-top pic-size" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Maria Perez.</h5>
+                <p class="card-text">Enfermera</p>
+              </div>
+            </div>
+          </div>
+          <!--card2-->
+          <div class="col-10 col-md-5 col-lg-3">
+            <div class="card pic" style="width: 18rem;">
+              <img src="https://media.istockphoto.com/photos/confident-young-female-african-scrub-nurse-wear-blue-uniform-face-picture-id1313904486?b=1&k=20&m=1313904486&s=612x612&w=0&h=1Ps12Wv2H4_arMgevIIe-Xt1D3GDJvUdgBIRwykAeLM=" class="card-img-top pic-size" alt="...">
+              <div class="card-body text-center ">
+                <h5 class="card-title">Maria Perez.</h5>
+                <p class="card-text">Enfermera</p>
+              </div>
+            </div>
+          </div>
+          
+          <!--card3-->
+          <div class="col-10 col-lg-3">
+            <div class="card pic" style="width: 18rem;">
+              <img src="https://media.istockphoto.com/photos/all-i-need-can-be-accessed-with-such-ease-picture-id1304125376?b=1&k=20&m=1304125376&s=612x612&w=0&h=za6AmHEEkEJ0Tg3-DShXr3wqczDZeKYXtsLVdmxfKaM=" class="card-img-top pic-size" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Maria Perez.</h5>
+                <p class="card-text">Enfermera</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

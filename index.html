@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+    <title>FUNAM</title>
+  </head>
+
+  <body class="bg-light">
+    <!--test-->
+
+    <!--navbar-->
+
+    <div class="sticky-top py-2">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FUNAM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dar fs-5"
+                  aria-current="page"
+                  href="#inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5" href="#about">Acerca De</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5" href="#team">Nuestro Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5" href="#contacto">Contáctenos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--navbar-->
+    <!--Carousel-->
+
+    <section id="inicio" class="bg-light mb-5">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="item1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                Cuando la gracia se combina con las arrugas, resultan adorables
+              </h5>
+              <p>Hay un amanecer indescriptible en la vejez feliz.</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="item2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>La vejez no está en la edad</h5>
+              <p>sino en el corazón..</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="item3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>En la vida hay que coleccionar momentos</h5>
+              <p>No cosas.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--Carousel-->
+
+    <!--Main Section-->
+    <section id="about" class="my-5 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-8 col-lg-5 text-md-center p-3 flex-column align-items-center"
+          >
+            <h2 class="display-2 fw-light text-md-start">Somos una familia</h2>
+            <p class="text-md-start lead">
+              En FUNAM consideramos a cada uno de nuestros residentes y sus familiares como una gran familia, queremos que cada uno de ellos sientan confianza y seguridad en cada una de nuestras labores, brindando un apoyo continuo y asesoramiento ante cualquier situación o duda que se presente.
+            </p>
+            <p class="d-none d-md-block text-md-start lead">
+              Contamos con varios años de experiencia y esta es una labor en la cual nos enorgullecemos, ya que en FUNAM podrás encontrar calidad, bienestar y lo más importante, amor y apoyo.
+            </p>
+          </div>
+          <div class="col-8 col-lg-5 d-flex ms-2">
+            <img
+              class="w-100 rounded-3 shadow-1"
+              src="./img/senior-main-1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Main Section-->
+
+    <section id="servicios">
+      <div class="container my-5">
+      <div
+        class="row justify-content-center flex-sm-column-reverse flex-lg-row justify-content-center align-items-center"
+      >
+        <div class="col-8 col-lg-5 d-flex">
+          <img
+            class="w-100 rounded-3 shadow-1"
+            src="./img/servicios3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-8 col-lg-5 text-md-center p-3 align-items-center ms-2">
+          <h2 class="display-2 fw-light text-md-start">Servicios</h2>
+          <p class="text-md-start lead">
+            Contamos con un equipo profesional para el cuidado de cada uno de nuestros abuelos, brindándoles apoyo en la mejor etapa de su vida.
+          </p>
+          <p class="d-none d-md-block text-md-start lead">
+            <ul class="text-start">
+              <li>Medico</li>
+              <li>Fisioterapia</li>
+              <li>Alimentacion</li>
+              <li>Alojamiento</li>
+              <li>Enfermeria 24 horas</li>
+              <li>Psicologia, acompañamiento individual y familiar</li>
+              <li>Guarderia para el adulto mayor horas y dias</li>
+              <li>Actidades productivas</li>
+              <li>Recreación</li>
+              <li>Acompañamiento espiritual</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Equipo-->
+
+    <section class="bg-white p-3" id="team">
+      <div class="container ">
+        <h3 class="text-center my-4">Nuestro Equipo</h3>
+        <div class="row  justify-content-around ">
+          <div class="col-8 col-md-5 col-lg-3  my-3">
+            <div class="card " style="width: 18rem;">
+              <img src="https://media.istockphoto.com/photos/smiling-hispanic-woman-health-worker-in-blue-uniform-in-medical-picture-id1297554621?b=1&k=20&m=1297554621&s=612x612&w=0&h=0juodRBLqtT72Fi1JrjzgOvIkwQQ5YYtA1_seCrim2A=" class="card-img-top"  alt="...">
+              <div class="card-body">
+                <p class="card-title text-center lead">Maria Perez</p>
+                <p class="card-subtitle text-center">Enfermera</p>
+              </div>
+            </div>
+          </div>
+
+          <!--card-->
+          <div class="col-8 col-md-5 col-lg-3  my-3 ">
+            <div class="card " style="width: 18rem;">
+              <img src="https://media.istockphoto.com/photos/smiling-hispanic-woman-health-worker-in-blue-uniform-in-medical-picture-id1297554621?b=1&k=20&m=1297554621&s=612x612&w=0&h=0juodRBLqtT72Fi1JrjzgOvIkwQQ5YYtA1_seCrim2A=" class="card-img-top"  alt="...">
+              <div class="card-body">
+                <p class="card-title text-center lead">Maria Perez</p>
+                <p class="card-subtitle text-center">Enfermera</p>
+              </div>
+            </div>
+          </div>
+
+          <!--card-->
+          <div class="col-8 col-md-5 col-lg-3  my-3 ">
+            <div class="card " style="width: 18rem;">
+              <img src="https://media.istockphoto.com/photos/smiling-hispanic-woman-health-worker-in-blue-uniform-in-medical-picture-id1297554621?b=1&k=20&m=1297554621&s=612x612&w=0&h=0juodRBLqtT72Fi1JrjzgOvIkwQQ5YYtA1_seCrim2A=" class="card-img-top"  alt="...">
+              <div class="card-body">
+                <p class="card-title text-center lead ">Maria Perez</p>
+                <p class="card-subtitle text-center ">Enfermera</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!--footer-->
+    <section class="my-5 " id="contacto">
+        <div class="container">
+          <h3 class="text-center my-5">¿Necesitas más información?</h3>
+          <div class="row justify-content-center">
+            <div class="col-8 col-lg-5">
+              <div id="map"></div>
+            </div>
+
+            <!--card2-->
+            <div class="col-8 col-lg-5">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-8 align-items-center justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Contáctenos</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">funam.fundacion@gmail.com</h6>
+                    <p class="card-text">+57 302 854 2341</p>
+                    <p class="card-text">Calle 9 # 13-45</p>
+                <p>Girardota, Antioquia, Colombia</p>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col-md-4 border">
+                  <img src="./img/logo.jpg" alt="funam logo" class="img-fluid rounded-start" id="logo">
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+    <footer class="my-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/map.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.height {
+  width: 120vh;
+}
+
+#carouselExampleCaptions,
+.carousel-inner,
+.carousel-item,
+.carousel-item-active {
+  height: 60vh;
+}
+
+#item1 {
+  background-image: url("/img/senior1-min.jpg");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /*background-size: 100% 100%;*/
+}
+
+#item2 {
+  border: 1px solid black;
+  background-image: url("/img/senior2-min.jpg");
+
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /*background-size: 100% 100%;*/
+}
+
+#item3 {
+  border: 1px solid black;
+  background-image: url("/img/senior3-min.jpg");
+
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /*background-size: 100% 100%;*/
+}
+
+.pic {
+  height: 300px;
+}
+
+.pic-size {
+  height: 250px;
+}
+
+#map {
+  height: 210px;
+  /*width: 60%;*/
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 595px) {
+  #logo {
+    max-width: 80%;
+  }
+}
